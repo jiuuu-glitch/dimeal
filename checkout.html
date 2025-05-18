@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    header { background: #d60000; color: white; padding: 1rem; text-align: center; }
+    form { padding: 1rem; display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: auto; }
+    input, select {
+      padding: 0.7rem; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem;
+    }
+    button {
+      background: #d60000; color: white; padding: 1rem;
+      border: none; border-radius: 30px; font-size: 1rem; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>Isi Alamat & Pembayaran</header>
+  <form action="success.html">
+    <label>Alamat Pengiriman:</label>
+    <input type="text" placeholder="Jl. Contoh No. 123" required>
+
+    <label>Metode Pembayaran:</label>
+    <select required>
+      <option value="">-- Pilih --</option>
+      <option>Transfer Bank</option>
+      <option>QRIS</option>
+      <option>COD</option>
+    </select>
+
+    <button type="submit">Bayar Sekarang</button>
+  </form>
+</body>
+</html>
